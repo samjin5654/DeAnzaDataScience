@@ -1,18 +1,88 @@
-﻿<!doctype html>
+﻿    
+<!doctype html>
 <html>
 <head>
-    <title>WEB1 - CSS</title>
+    <title>Survey</title>
     <meta charset="UTF-8"> 
-    <style>
-        h1 {
-            text-align:center;
-            font-size: 45px;
-            
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link href= "js/data.js">
+    <script src="js/data.js"></script>
+
 </head>
 <body>
-    <h1><a href="index.html"
-           style="text-decoration:none">WEB</a></h1>
+    <!-- Menu bar -->
+    <div id="MenuBar">
+        <h clss="Head">LOGO</h>
+    </div>
+    
+    <!-- Head of the website -->
+    <div id="Head">
+        <h class="Title">De Anza Class Survey</h>
+    </div>
+    <hr class="Head">
+
+    <!-- Body of the website -->
+    <div id="Body">
+    <form onSubmit="WriteToFile(this)">
+        <div class="Block" style="height:100px;">
+            <h class="Body"> <img src="image/notebook.png" alt="notebook" style="width:20px;height:20px;"> What is your major?</h><br>
+            <input class="Textbox" type="text" id="major" placeholder="Enter major">
+        </div>
+    <hr class="Body">
+    
+    <form action="/action_page.php" method="get">
+        
+        <!-- Block class is used to divide each sector(question) -->
+        <div class="Block">
+            <h class="Body">2. What is your gender</h> <br>
+            <input type="radio" name="gender" id="gender" value="Male"> Male<br>
+            <input type="radio" name="gender" id="gender" value="Female"> Female<br>
+            <input type="radio" name="gender" id="gender" value="Other"> Other<br>
+        </div>
+    </form>
+        
+    <hr class="Body">
+        <div class="Block">
+            <h class="Body">3. What classes are you planning to take?</h> <br>
+            <input class="Textbox" type="text" id="Class_op1" placeholder="Enter class"><br>
+            <input class="Textbox" type="text" id="Class_op2" placeholder="Enter class"><br>
+            <input class="Textbox" type="text" id="Class_op3" placeholder="Enter class"><br>
+        </div>
+    <hr class="Body">
+        <div class="Block">
+        <h class="Body">4. How determined are on taking the class?</h>
+        <p class="Fluency"> Not Important </p><br>
+            <input class="Fluency" type="radio" name="fluency" id="fluency" value="1"> 
+            <input class="Fluency" type="radio" name="fluency" id="fluency" value="2"> 
+            <input class="Fluency" type="radio" name="fluency" id="fluency" value="3"> 
+            <input class="Fluency" type="radio" name="fluency" id="fluency" value="4"> 
+            <input class="Fluency" type="radio" name="fluency" id="fluency" value="5"> 
+            <input class="Fluency" type="radio" name="fluency" id="fluency" value="6"> 
+            <input class="Fluency" type="radio" name="fluency" id="fluency" value="7"> 
+            <input class="Fluency" type="radio" name="fluency" id="fluency" value="8"> 
+            <input class="Fluency" type="radio" name="fluency" id="fluency" value="9"> 
+            <input class="Fluency" type="radio" name="fluency" id="fluency" value="10"> 
+        </div>
+    <hr class="Body">
+        <div class="Block">
+            <h class="Body">5. What time are you avaliable during summer quarter?</h>><br>
+            <input type="checkbox" name="gender" id="gender" value="Male"><br>
+            <input type="checkbox" name="gender" id="gender" value="Male"><br>
+            <input type="checkbox" name="gender" id="gender" value="Male"><br>
+            <input type="checkbox" name="gender" id="gender" value="Male"><br>
+            <input type="checkbox" name="gender" id="gender" value="Male"><br>
+        </div>
+    <hr class="Body">
+    <input type="submit" value="Submit">
+    </form>
+    </div>
 </body>
+<hr class="Head">
+<footer class="contact">
+    <p class="Footer"> --- </p>
+    <p class="Footer">Survey by DADS</p>
+    <p class="Footer">Contact information: <a href="DeAnza.dads19@gmail.com">DeAnza.dads19@gmail.com</a></p>
+</footer>
+    
 </html>

@@ -17,20 +17,30 @@ div#NavBar {
 }
 ul.NavBar {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #111;
+        margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
 }
 li.NavBar {
-  float: left;
+    float: left;
 }
-li a.NavBar {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 22px 20px 22px 20px;
-  text-decoration: none;
+li a.NavBar{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 22px 20px 22px 20px;
+    text-decoration: none;
+}
+li p.NavBar{
+    margin: auto;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px 18px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #3C9F40;
 }
 /* Change the link color to #111 (black) on hover */
 li a.NavBar:hover {
@@ -84,11 +94,11 @@ div#Body {
 div.Block {
     background-color: #FEFFFF;
     
-    margin: 10px;
+    margin: 30px 10px 30px 10px;
     padding: 10px;
     
     border-radius: 3px;
-    border: 3px solid #ccc;
+    border: 3px solid #CCC;
 }
 
 /*****************
@@ -117,25 +127,25 @@ Head hr
 *****************/
 hr.Head {
     
-    border: 1px solid;
+    border: 1.5px solid;
     border-radius: 3px;
     
-    color: #cccccc;
+    color: #CCC;
 }
 
 /*****************
 Body hr
 *****************/
 hr.Body {
-    border: 1px solid;
+    border: 1.5px dashed ;
     border-radius: 3px;
     
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
     margin-top: 20px;
     margin-bottom: 20px;
     
-    color: #cccccc;
+    color: #CCC;
 }
 
 /*******************
@@ -188,4 +198,47 @@ only for chrome
    width: 95%;
     margin: 20px auto 20px;
     overflow: hidden
+}
+
+
+.Radio {
+    margin: 0px 30px 0px 30px;
+}
+
+.Radio_Det {
+    background-color: #DDD;
+    border-radius: 5px;
+    
+    text-align: center;
+    font-size: 20px;
+    margin: 5px 20px 5px 20px;
+    padding: 5px 10px 5px 10px;
+}
+
+.Checkbox_Time {
+    background-color: #DDD;
+    border-radius: 5px;
+    
+    text-align: left;
+    font-size: 20px;
+    margin: 5px 20px 5px 20px;
+    padding: 5px 10px 5px 10px;
+}
+
+.Checkbox_Gender {
+    background-color: #DDD;
+    border-radius: 5px;
+    
+    text-align: left;
+    font-size: 20px;
+    margin: 5px 20px 5px 20px;
+    padding: 5px 10px 5px 10px;
+}
+
+.TextBox_Major {
+    margin: 5px 20px 5px 20px;
+}
+
+.Textbox_Class {
+    margin: 5px 20px 5px 20px;
 }

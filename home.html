@@ -7,113 +7,133 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link href= "js/data.js">
-    <script src="js/data.js"></script>
-
 </head>
     
 <body>
-    <!-- Menu bar -->
-    <div id="MenuBar">
-        <h clss="Head">LOGO</h>
+    <!-- Navigation bar -->
+    <div id="NavBar">
+        <ul class="NavBar">
+            <li class="NavBar"><p class="NavBar" href="">DADS</p></li>
+            <li class="NavBar"><a class="NavBar" href="">Home</a></li>
+            <li class="NavBar"><a class="NavBar" href="">News</a></li>
+            <li class="NavBar"><a class="NavBar" href="">Contact</a></li>
+            <li class="NavBar"><a class="NavBar" href="">About</a></li>
+        </ul>
     </div>
-    
     <!-- Head of the website -->
     <div id="Head">
+        <br><br>
         <h class="Title">De Anza Class Survey</h>
     </div>
-    
     <hr class="Head">
-
+<form>
     <!-- Body of the website -->
     <div id="Body">
-    <form onSubmit="WriteToFile(this)">
         <div class="Block">
             <h class="Body"> <img src="image/notebook.png" alt="notebook" style="width:20px;height:20px;"> What is your major?</h><br>
-            <input class="Textbox" type="text" id="major" placeholder="Enter major">
+            <div class="TextBox_Major">
+                <input class="Textbox" type="text" id="major" placeholder="Enter major">
+            </div>
         </div>
-    <hr class="Body">
-    
-    <form action="/action_page.php" method="get">
-        
+    <hr class="Body">      
         <!-- Block class is used to divide each sector(question) -->
-        <div class="Block">
+    <div class="Block">
             <h class="Body"> <img src="image/genders.png" alt="gender" style="width:20px;height:20px;">  What is your gender</h> <br>
-            <input type="Radio" name="gender" id="gender" value="Male"> Male<br>
-            <input type="Radio" name="gender" id="gender" value="Female"> Female<br>
-            <input type="Radio" name="gender" id="gender" value="Other"> Other<br>
-        </div>
-    </form>
+            <div class="Checkbox_Gender">
+                <input type="Radio" name="gender" id="gender" value="Male"> Male<br>
+                <input type="Radio" name="gender" id="gender" value="Female"> Female<br>
+                <input type="Radio" name="gender" id="gender" value="Other"> Other<br>
+            </div>
+    </div>
         
     <hr class="Body">
         <div class="Block">
             <h class="Body"> <img src="image/sketch.png" alt="plan" style="width:20px;height:20px;"> What classes are you planning to take?</h> <br>
-            <input class="Textbox" type="text" id="Class_op1" placeholder="Enter class"><br>
-            <input class="Textbox" type="text" id="Class_op2" placeholder="Enter class"><br>
-            <input class="Textbox" type="text" id="Class_op3" placeholder="Enter class"><br>
+            <div class="Textbox_Class">
+                <input class="Textbox" type="text" id="Class_op1" placeholder="Enter class"><br>
+                <input class="Textbox" type="text" id="Class_op2" placeholder="Enter class"><br>
+                <input class="Textbox" type="text" id="Class_op3" placeholder="Enter class"><br>
+            </div>
         </div>
     <hr class="Body">
         <div class="Block">
         <h class="Body"> <img src="image/head.png" alt="head" style="width:20px;height:20px;"> How determined are on taking the <b>first</b> class?</h> <br>
-            Determined <input class="Radio" type="radio" name="fluency" id="fluency" value="1"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="2"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="3"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="4"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="5"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="6"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="7"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="8"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="9"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="10"> Not Determined
+        <div class="Radio_Det">
+            Determined 
+            <input class="Radio" type="radio" name="fluency" value="1"> 
+            <input class="Radio" type="radio" name="fluency" value="2"> 
+            <input class="Radio" type="radio" name="fluency" value="3"> 
+            <input class="Radio" type="radio" name="fluency" value="4"> 
+            <input class="Radio" type="radio" name="fluency" value="5"> 
+            <input class="Radio" type="radio" name="fluency" value="6"> 
+            <input class="Radio" type="radio" name="fluency" value="7"> 
+            <input class="Radio" type="radio" name="fluency" value="8"> 
+            <input class="Radio" type="radio" name="fluency" value="9"> 
+            <input class="Radio" type="radio" name="fluency" value="10"> 
+            Not Determined
+        </div>
         </div>
     <hr class="Body">
         <div class="Block">
         <h class="Body"> <img src="image/head.png" alt="head" style="width:20px;height:20px;"> How determined are on taking the <b>second</b> class?</h><br>
-            Determined <input class="Radio" type="radio" name="fluency" id="fluency" value="1"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="2"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="3"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="4"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="5"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="6"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="7"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="8"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="9"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="10"> Not Determined
+        <div class="Radio_Det">
+            Determined 
+            <input class="Radio" type="radio" name="fluency" value="1"> 
+            <input class="Radio" type="radio" name="fluency" value="2"> 
+            <input class="Radio" type="radio" name="fluency" value="3"> 
+            <input class="Radio" type="radio" name="fluency" value="4"> 
+            <input class="Radio" type="radio" name="fluency" value="5"> 
+            <input class="Radio" type="radio" name="fluency" value="6"> 
+            <input class="Radio" type="radio" name="fluency" value="7"> 
+            <input class="Radio" type="radio" name="fluency" value="8"> 
+            <input class="Radio" type="radio" name="fluency" value="9"> 
+            <input class="Radio" type="radio" name="fluency" value="10"> 
+            Not Determined
+        </div>
         </div>
     <hr class="Body">
         <div class="Block">
         <h class="Body"> <img src="image/head.png" alt="head" style="width:20px;height:20px;"> How determined are on taking the <b>third</b> class?</h><br>
-            Determined <input class="Radio" type="radio" name="fluency" id="fluency" value="1"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="2"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="3"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="4"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="5"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="6"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="7"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="8"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="9"> 
-            <input class="Radio" type="radio" name="fluency" id="fluency" value="10"> Not Determined
+        <div class="Radio_Det">
+            Determined 
+            <input class="Radio" type="radio" name="fluency" value="1"> 
+            <input class="Radio" type="radio" name="fluency" value="2"> 
+            <input class="Radio" type="radio" name="fluency" value="3"> 
+            <input class="Radio" type="radio" name="fluency" value="4"> 
+            <input class="Radio" type="radio" name="fluency" value="5"> 
+            <input class="Radio" type="radio" name="fluency" value="6"> 
+            <input class="Radio" type="radio" name="fluency" value="7"> 
+            <input class="Radio" type="radio" name="fluency" value="8"> 
+            <input class="Radio" type="radio" name="fluency" value="9"> 
+            <input class="Radio" type="radio" name="fluency" value="10"> 
+            Not Determined
+        </div>
         </div>
     <hr class="Body">
         <div class="Block">
             <h class="Body"> <img src="image/clock.png" alt="time" style="width:20px;height:20px;"> What time are you avaliable during summer quarter?</h><br>
-            <input type="checkbox" class="Checkbox" name="gender" id="gender" value="Male">MTWR - 07:30 a.m~09:45 a.m<br> 
-            <input type="checkbox" class="Checkbox" name="gender" id="gender" value="Male">MTWR - 10:00 a.m~12:15 p.m<br>
-            <input type="checkbox" class="Checkbox" name="gender" id="gender" value="Male">MTWR - 12:30 p.m~02:45 p.m<br>
-            <input type="checkbox" class="Checkbox" name="gender" id="gender" value="Male">MTWR - 03:00 p.m~05:15 p.m<br>
-            <input type="checkbox" class="Checkbox" name="gender" id="gender" value="Male">MTWR - 05:30 p.m~07:45 p.m<br>
-            <input type="checkbox" class="Checkbox" name="gender" id="gender" value="Male">MTWR - 08:00 p.m~10:15 p.m<br>
-            <input type="checkbox" class="Checkbox" name="gender" id="gender" value="Male">MW - 7:30 a.m~12:15 p.m<br>
-            <input type="checkbox" class="Checkbox" name="gender" id="gender" value="Male">MW - 12:15 p.m~05:15 p.m<br>
-            <input type="checkbox" class="Checkbox" name="gender" id="gender" value="Male">MW - 5:30 p.m~10:00 p.m<br>
-            <input type="checkbox" class="Checkbox" name="gender" id="gender" value="Male">TTR - 7:30 a.m~12:15 p.m<br>
-            <input type="checkbox" class="Checkbox" name="gender" id="gender" value="Male">TTR - 12:15 p.m~05:15 p.m<br>
-            <input type="checkbox" class="Checkbox" name="gender" id="gender" value="Male">TTR - 05:30 p.m~10:00 p.m<br>
-            <input type="checkbox" class="Checkbox" name="gender" id="gender" value="Male">None of them<br>
+        <div class="Checkbox_Time">
+            <input type="checkbox" class="Checkbox" name="time" value="MTWR - 07:30 a.m~09:45 a.m">MTWR - 07:30 a.m~09:45 a.m<br> 
+            <input type="checkbox" class="Checkbox" name="time" value="MTWR - 10:00 a.m~12:15 p.m">MTWR - 10:00 a.m~12:15 p.m<br>
+            <input type="checkbox" class="Checkbox" name="time" value="MTWR - 12:30 p.m~02:45 p.m">MTWR - 12:30 p.m~02:45 p.m<br>
+            <input type="checkbox" class="Checkbox" name="time" value="MTWR - 03:00 p.m~05:15 p.m">MTWR - 03:00 p.m~05:15 p.m<br>
+            <input type="checkbox" class="Checkbox" name="time" value="MTWR - 05:30 p.m~07:45 p.m">MTWR - 05:30 p.m~07:45 p.m<br>
+            <input type="checkbox" class="Checkbox" name="time" value="MTWR - 08:00 p.m~10:15 p.m">MTWR - 08:00 p.m~10:15 p.m<br>
+            <input type="checkbox" class="Checkbox" name="time" value="MW - 7:30 a.m~12:15 p.m">MW - 7:30 a.m~12:15 p.m<br>
+            <input type="checkbox" class="Checkbox" name="time" value="MW - 12:15 p.m~05:15 p.m">MW - 12:15 p.m~05:15 p.m<br>
+            <input type="checkbox" class="Checkbox" name="time" value="MW - 5:30 p.m~10:00 p.m">MW - 5:30 p.m~10:00 p.m<br>
+            <input type="checkbox" class="Checkbox" name="time" value="TTR - 7:30 a.m~12:15 p.m">TTR - 7:30 a.m~12:15 p.m<br>
+            <input type="checkbox" class="Checkbox" name="time" value="TTR - 12:15 p.m~05:15 p.m">TTR - 12:15 p.m~05:15 p.m<br>
+            <input type="checkbox" class="Checkbox" name="time" value="TTR - 05:30 p.m~10:00 p.m">TTR - 05:30 p.m~10:00 p.m<br>
+            <input type="checkbox" class="Checkbox" name="time" value="None of them">None of them<br>
+        </div>
         </div>
     <hr class="Body">
-    <input type="submit" value="Submit">
-    </form>
+        <div class="Button_Submit">
+            <input type="submit" value="Submit" style="float:right">
+        </div>  
     </div>
+    </form>
 </body>
 
 <hr class="Head">

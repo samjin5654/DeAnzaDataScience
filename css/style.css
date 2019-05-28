@@ -95,7 +95,10 @@ div#Body {
 div.Block {
     background-color: #FEFFFF;
     
-    margin: 30px 10px 30px 10px;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:10%;
+    margin-right:10%;
     padding: 10px 10px 10px 10px;
     
     border-radius: 3px;
@@ -400,17 +403,17 @@ Custom Radio for fluency Q
 *****************/
 /* Customize the label (the container) */
 .Radio_F {
-    display: block;
+    display: inline;
     position: relative;
-    padding-left: 35px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-left: 30px;
+    margin: 20px 0px 40px 0px;
     cursor: pointer;
     font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    border: 3px solid #777;
 }
 
 /* Hide the browser's default radio button */
@@ -427,10 +430,10 @@ Custom Radio for fluency Q
     position: absolute;
     top: 0;
     left: 0;
-    height: 28px;
-    width: 28px;
+    height: 30px;
+    width: 30px;
     background-color: #eee;
-    border-radius: 50%;
+    border-radius: 0%;
 }
 
 /* On mouse-over, add a grey background color */
@@ -457,14 +460,20 @@ Custom Radio for fluency Q
 
 /* Style the indicator (dot/circle) */
 .Radio_F .Dot_F:after {
-    top: 7px;
-    left: 7px;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: white;
+    
 }
 /*****************************************************/
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 0%;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: 8px 2px 0px 0px;
+    cursor: pointer;
+}
 
 .Title {
     margin: auto;
@@ -535,4 +544,18 @@ Custom Radio for fluency Q
 .Text_Gender {
     Margin: 0px 10px 0px 35px;
     padding: 0px;
+}
+
+.Table_F {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Text_F {
+
+}
+
+table {
+    
 }

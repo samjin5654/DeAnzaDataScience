@@ -534,7 +534,7 @@ input[type=button], input[type=submit], input[type=reset] {
     padding: 5px 10px 5px 10px;
 }
 
-.TextBox_Major {
+.Dropdown_Major {
     margin: 5px 20px 5px 20px;
 }
 
@@ -566,3 +566,7 @@ table {
 }
 
 
+
+.Dropdown {
+    
+}

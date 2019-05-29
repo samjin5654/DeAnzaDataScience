@@ -103,6 +103,7 @@ div.Block {
     
     border-radius: 3px;
     border: 3px solid #CCC;
+    
 }
 
 /*****************
@@ -111,6 +112,7 @@ div.Block {
 .Contact {
     background-color: #FEFFFF;
     
+    color: #111;
     height: 60px;
     margin-left:-10px;
     margin-right:-10px;
@@ -118,6 +120,7 @@ div.Block {
     text-align: center;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 /* get rid of margin between text on footer*/
@@ -405,15 +408,15 @@ Custom Radio for fluency Q
 .Radio_F {
     display: inline;
     position: relative;
-    padding-left: 30px;
-    margin: 20px 0px 40px 0px;
+    padding-left: 50px; /*width*/
+    margin: 20px -3px 20px -3px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 22px;  /*height*/
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    border: 3px solid #777;
+    border: 3px solid #AAA;
 }
 
 /* Hide the browser's default radio button */
@@ -430,8 +433,8 @@ Custom Radio for fluency Q
     position: absolute;
     top: 0;
     left: 0;
-    height: 30px;
-    width: 30px;
+    height: 100%;
+    width: 100%; 
     background-color: #eee;
     border-radius: 0%;
 }
@@ -504,9 +507,11 @@ input[type=button], input[type=submit], input[type=reset] {
     border-radius: 5px;
     
     text-align: center;
-    font-size: 20px;
+    font-size: 80% auto;
     margin: 5px 20px 5px 20px;
     padding: 5px 10px 5px 10px;
+    
+    white-space: : nowrap;
 }
 
 .Checkbox_Time {
@@ -514,7 +519,7 @@ input[type=button], input[type=submit], input[type=reset] {
     border-radius: 5px;
     
     text-align: left;
-    font-size: 20px;
+    font-size: 22px;
     margin: 5px 20px 5px 20px;
     padding: 5px 10px 5px 10px;
 }
@@ -553,9 +558,11 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 .Text_F {
-
+    margin: 0px 10px 0px 10px;
 }
 
 table {
     
 }
+
+

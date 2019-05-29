@@ -1,5 +1,4 @@
-﻿    
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
     <title>Survey</title>
@@ -10,14 +9,22 @@
 </head>
     
 <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/6.1.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
     <!-- Navigation bar -->
     <div id="NavBar">
         <ul class="NavBar">
             <li class="NavBar"><p class="NavBar" href="">DADS</p></li>
-            <li class="NavBar"><a class="NavBar" href="index.html">Home</a></li>
-            <li class="NavBar"><a class="NavBar" href="News.html">News</a></li>
-            <li class="NavBar"><a class="NavBar" href="Contact.html">Contact</a></li>
-            <li class="NavBar"><a class="NavBar" href="About.html">About</a></li>
+            <li class="NavBar"><a class="NavBar" href="">Home</a></li>
+            <li class="NavBar"><a class="NavBar" href="">News</a></li>
+            <li class="NavBar"><a class="NavBar" href="">Contact</a></li>
+            <li class="NavBar"><a class="NavBar" href="">About</a></li>
         </ul>
     </div>
     <!-- Head of the website -->
@@ -31,8 +38,15 @@
     <div id="Body">
         <div class="Block">
             <h class="Body"> <img src="image/notebook.png" alt="notebook" style="width:20px;height:20px;"> What is your major?</h><br>
-            <div class="TextBox_Major">
-                <input class="Textbox" type="text" id="major" placeholder="Enter major">
+            <div class="Dropdown_Major">
+                <select class="Dropdown">
+                    <option value="option">option</option>
+                    <option value="option">option</option>
+                    <option value="option">option</option>
+                    <option value="option">option</option>
+                    <option value="option">option</option>
+                    <option value="option">option</option>
+                </select>
             </div>
         </div>
     <hr class="Body">      
@@ -62,7 +76,7 @@
         <div class="Block">
         <h class="Body"> <img src="image/head.png" alt="head" style="width:20px;height:20px;"> How determined are on taking the <b>first</b> class?</h> 
             <div class="Radio_Det"><table class="Table_F"><tr>
-                <td>Determined</td>
+                <td class="Text_F">Determined</td>
                 <td><label class="Radio_F"><input type="radio" name="fluency_1" value="1"> <span class="Dot_F"></span> </label></td>
                 <td><label class="Radio_F"><input type="radio" name="fluency_1" value="2"> <span class="Dot_F"></span> </label></td>
                 <td><label class="Radio_F"><input type="radio" name="fluency_1" value="3"> <span class="Dot_F"></span> </label></td>
